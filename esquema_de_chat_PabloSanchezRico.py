@@ -46,7 +46,7 @@ def serve_client(conn, pid, clients):
     print (pid, 'connection closed')
     
 def main(ip_address):
-    with Listener(addess=(ip_address, 6000),
+    with Listener(address=(ip_address, 6000),
                   authkey=b'secret password server') as listener:
         print('listener starting')
         
